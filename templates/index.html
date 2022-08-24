@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Hello world!</title>
+  
+</head>
+<body>
+
+It works!
+{% for query in queries %}
+            <div class="student">
+                <p><b>#{{ query.id }}</b></p>
+                <b>
+                    <p class="name">{{ query.date }} {{ query.id }} {{query.item}} {{query.value}}</p>
+                </b>
+                
+            </div>
+        {% endfor %}
+
+</body>
+</html>
